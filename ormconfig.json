@@ -1,0 +1,18 @@
+{
+	"type": "${DATABASE_TYPE}",
+	"host": "${DATABASE_HOST}",
+	"port": "${DATABASE_PORT}",
+	"username": "${DATABASE_USERNAME}",
+	"password": "${DATABASE_PASSWORD}",
+	"database": "${DATABASE_NAME}",
+	"synchronize": true,
+	"logging": false,
+	"entities": ["src/entity/**/*.ts"],
+	"migrations": ["src/migration/**/*.ts"],
+	"subscribers": ["src/subscriber/**/*.ts"],
+	"cli": {
+		"entitiesDir": "src/entity",
+		"migrationsDir": "src/migration",
+		"subscribersDir": "src/subscriber"
+	}
+}
